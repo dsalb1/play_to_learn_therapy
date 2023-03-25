@@ -1,19 +1,30 @@
 // Step 1: Import React
 import * as React from 'react'
 import Layout from '../components/layout'
+import { StaticImage } from 'gatsby-plugin-image'
 
 // Step 2: Define your component
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Play to Learn Therapy">
-      <h2>Speech and occupational therapy summer 2023</h2>
-      <p>Summertime speech and occupational therapy provided by Bridget Salberg and Jenny Smegner</p>
-      <ul>
-        <li>combined 30+ years of experience</li>
-        <li>addressing concerns of speech delays and fine and visual motor skills</li>
-        <li>located in Webster Groves/Sunset Hills</li>
-      </ul>
-      <p>For more information<br></br>Contact Jenny at 314-705-4425</p>
+    <Layout>
+      <div className="main-content">
+        <StaticImage
+            className="sand-image"
+            alt="Children playing in sand"
+            layout="fixed"
+            width={400}
+            height={400}
+            src="../images/sand.jpeg"
+          />
+        <div className="about">
+          <p>Summertime speech and occupational therapy provided by Bridget Salberg and Jenny Smegner</p>
+          <ul>
+            <li>combined 30+ years of experience</li>
+            <li>addressing concerns of speech delays and fine and visual motor skills</li>
+            <li>located in Webster Groves/Sunset Hills</li>
+          </ul>
+        </div>
+        </div>
     </Layout>
   )
 }
