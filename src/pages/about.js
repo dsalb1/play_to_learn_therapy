@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import AboutUs from '../components/AboutUs'
 import Footer from '../components/Footer'
 import Layout from '../components/Layout'
@@ -6,12 +6,12 @@ import Layout from '../components/Layout'
 
 const AboutPage = () => {
   return (
-	<>
+	<React.Fragment>
 		<Layout pageTitle="About Us">
 			<AboutUs />
 		</Layout>
 		<Footer />
-	</>
+	</React.Fragment >
   )
 }
 

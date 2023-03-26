@@ -1,13 +1,15 @@
-// Step 1: Import React
-import * as React from 'react'
-import Layout from '../components/Layout'
+import React from 'react'
+
 import { StaticImage } from 'gatsby-plugin-image'
+
+
+import Layout from '../components/Layout'
 import AboutUs from '../components/AboutUs'
 import Footer from '../components/Footer'
 
 const IndexPage = () => {
   return (
-		<>
+		<React.Fragment>
 			<Layout>
 				<div className="main-content">
 					<StaticImage
@@ -22,7 +24,7 @@ const IndexPage = () => {
 				</div>
 			</Layout>
 			<Footer />
-		</>
+		</React.Fragment>
   );
 }
 
