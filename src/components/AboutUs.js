@@ -1,15 +1,19 @@
 import React from "react";
 
 const AboutUs = () => {
-	const bridgetTitle = 'Bridget Salberg, MA, CCC-SLP,';
-	const jennyTitle = 'Jenny Smegner, MHS, OTR/L';
+	const bridgetCreds = 'MA, CCC-SLP';
+	const jennyCreds = 'MHS, OTR/L';
+
 	return (
 		<div className="about">
-			<p>Summertime speech and occupational therapy provided by {bridgetTitle} and {jennyTitle}</p>
+			<p>
+				Summertime speech and occupational therapy provided by Bridget Salberg <sup>{bridgetCreds}</sup> and
+				Jenny Smegner <sup>{jennyCreds}</sup>
+			</p>
 			<ul>
-				<li>combined 30+ years of experience</li>
-				<li>addressing concerns of speech delays and fine and visual motor skills</li>
-				<li>located in Webster Groves/Sunset Hills</li>
+				<li>Combined 30+ years of experience</li>
+				<li>Addressing concerns of speech delays and fine and visual motor skills</li>
+				<li>Located in Webster Groves/Sunset Hills</li>
 			</ul>
 		</div>
 	);

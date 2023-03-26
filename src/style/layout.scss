@@ -84,11 +84,18 @@ nav ul {
 	flex-wrap: wrap;
 
 	.about {
-		line-height: 24px;
-	}
-
-	p {
-		text-align: center;
+		line-height: 22px;
+		p {
+			margin-left: 10px;
+			margin-bottom: 10px;
+			text-align: left;
+		}
+		ul {
+			margin-top: 0;
+		}
+		sup {
+			font-size: 10px;
+		}
 	}
 }
 
@@ -119,6 +126,12 @@ footer {
 		height: 300px;
 		width: 300px;
 		margin-left: unset;
+	}
+}
+
+@media (max-width: 600px) {
+	.gatsby-image-wrapper {
+		height: 350px !important;
 	}
 }
 
