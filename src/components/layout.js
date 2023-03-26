@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import '../style/layout.scss'
-import Circle from '../components/Circle'
-import MainNav from '../components/MainNav'
+import '../style/layout.scss';
+import Circle from '../components/Circle';
+import MainNav from '../components/MainNav';
 
 const Layout = (props) => {
 	return (
