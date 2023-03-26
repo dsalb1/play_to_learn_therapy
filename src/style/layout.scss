@@ -11,9 +11,9 @@ body {
 	margin: 0;
 }
 
-.container {
+.container, footer {
 	background-color: #F2F4F4;
-	padding: 20px;
+	padding: 0 20px;
 	margin: auto;
 	overflow: hidden;
 	max-width: 768px;
@@ -21,13 +21,25 @@ body {
 }
 
 nav ul {
-	margin-top: -20px;
+	width: 100vw;
+	background-color: purple;
+	margin: 0 -20px;
+	padding: 10px;
 	display: flex;
-	padding-left: 0;
 
 	li {
 		list-style: none;
 		margin-right: 10px;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	a:hover {
+		color: blue;
 	}
 }
 
