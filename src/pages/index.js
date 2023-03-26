@@ -1,11 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
-import { StaticImage } from 'gatsby-plugin-image'
-
-
-import Layout from '../components/Layout'
-import AboutUs from '../components/AboutUs'
-import Footer from '../components/Footer'
+import AboutUs from '../components/AboutUs';
+import Footer from '../components/Footer';
+import Layout from '../components/Layout';
 
 const IndexPage = () => {
   return (
