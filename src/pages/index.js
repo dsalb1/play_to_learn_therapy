@@ -8,7 +8,7 @@ import Layout from '../components/Layout';
 const IndexPage = () => {
   return (
 		<React.Fragment>
-			<Layout>
+			<Layout id="home">
 				{/* <div className="main-content"> */}
 					<StaticImage
 						className="sand-image"

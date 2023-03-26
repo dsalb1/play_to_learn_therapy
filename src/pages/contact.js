@@ -7,7 +7,7 @@ import Layout from '../components/Layout';
 const ContactPage = () => {
   return (
 		<React.Fragment>
-			<Layout pageTitle="Contact Us">
+			<Layout id="contact" pageTitle="Contact Us">
 				<p>
 					For more information<br></br>Contact Jenny at 314-705-4425
 				</p>

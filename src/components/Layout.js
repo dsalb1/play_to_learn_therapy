@@ -5,7 +5,7 @@ import Burger from './Burger';
 import Circle from './Circle';
 import MainNav from './MainNav';
 
-const Layout = ({pageTitle, children}) => {
+const Layout = (props) => {
 	const [open, setOpen] = useState(false);
 
 	const toggleBurgerHandler = () => {
@@ -14,7 +14,7 @@ const Layout = ({pageTitle, children}) => {
 	}
 
 	return (
-		<div id="home" className="container">
+		<div id={props.id} className="container">
 			<Burger open={open} onClickHandler={toggleBurgerHandler}/>
 			{open && <MainNav />}
 			<main>
@@ -22,11 +22,17 @@ const Layout = ({pageTitle, children}) => {
 					<p className="heading">Play to Learn Therapy</p>
 					<p className="content">Speech and Occupational Therapy Summer 2023</p>
 				</Circle>
-				<h1>{pageTitle}</h1>
+				{props.pageTitle !== undefined && <h1>{props.pageTitle}</h1>}
 				<div className="main-content">
-					{children}
+					{props.children}
 				</div>
 			</main>
+			<div className="bottom">
+				<p>
+					For more information<br></br>Contact Jenny at 314-705-4425
+				</p>
+				<Circle />
+			</div>
 		</div>
 	);
 }

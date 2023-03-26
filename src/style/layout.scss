@@ -2,8 +2,8 @@ html {
 	background-color: white;
 
 	p {
-		font-size: 18px;
-		line-height: 22px;
+		font-size: 16px;
+		line-height: 20px;
 	}
 }
 
@@ -35,6 +35,21 @@ body {
 	content: "";
 	display: block;
 	padding-bottom: 100%;
+}
+
+.bio {
+	img {
+		margin: 0 auto;
+		display: block;
+		width: 50%;
+	}
+	p {
+		padding-left: 10px;
+		padding-right: 10px;
+		text-align: center;
+		font-size: 16px;
+		line-height: 20px;
+	}
 }
 
 .text {
@@ -88,7 +103,7 @@ body {
 	height: auto;
 }
 
-footer {
+.bottom {
 	height: 150px;
 	overflow: hidden;
 
@@ -110,8 +125,19 @@ footer {
 	}
 }
 
+footer {
+	padding-top: 12px; 
+	background: purple;
+	color: white;
+	padding-bottom: 8px;
+	height: 80px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 22px;
+}
+
 @media (max-width: 600px) {
-	.gatsby-image-wrapper {
+	.sand-image {
 		height: 350px !important;
 	}
 }
@@ -123,6 +149,18 @@ footer {
 	}
 	main .circle {
 		margin-left: 25%;
+	}
+	.bio {
+		display: flex;
+		img {
+			margin-left: unset;
+			width: auto;
+		}
+		p {
+			padding-left: 20px;
+			padding-right: 20px;
+			text-align: left;
+		}
 	}
 	.text {
 		top: 15%;
@@ -143,21 +181,23 @@ footer {
 }
 
 @media (min-width: 728px) {
-	.main-content {
-		position: relative;
-		top: -100px;
-
-		.about {
-			margin-top: 100px;
+	#home {
+		.main-content {
+			.about {
+				margin-top: 100px;
+			}
 		}
 	}
 
-	footer {
+	.bottom {
+		margin-top: 30px;
 		display: flex;
 		justify-content: center;
 	}
 
 	main .circle {
+		position: relative;
+		top: 70px;
 		margin-left: 50%;
 	}
 }
