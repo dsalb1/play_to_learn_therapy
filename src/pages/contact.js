@@ -3,7 +3,6 @@ import Footer from '../components/Footer'
 import Layout from '../components/Layout'
 
 
-// Step 2: Define your component
 const ContactPage = () => {
   return (
 		<>
@@ -17,7 +16,6 @@ const ContactPage = () => {
   );
 }
 
-export const Head = () => <title>About Me</title>
+export const Head = () => <title>Play to Learn Therapy - Contact Us</title>
 
-// Step 3: Export your component
 export default ContactPage

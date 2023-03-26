@@ -5,7 +5,6 @@ import { StaticImage } from 'gatsby-plugin-image'
 import AboutUs from '../components/AboutUs'
 import Footer from '../components/Footer'
 
-// Step 2: Define your component
 const IndexPage = () => {
   return (
 		<>
@@ -27,8 +26,6 @@ const IndexPage = () => {
   );
 }
 
-// You'll learn about this in the next task, just copy it for now
 export const Head = () => <title>Play to Learn Therapy - Home</title>
 
-// Step 3: Export your component
 export default IndexPage

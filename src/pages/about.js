@@ -15,6 +15,6 @@ const AboutPage = () => {
   )
 }
 
-export const Head = () => <title>About Me</title>
+export const Head = () => <title>Play to Learn Therapy - About Us</title>
 
 export default AboutPage
