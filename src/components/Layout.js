@@ -26,13 +26,13 @@ const Layout = (props) => {
 				<div className="main-content">
 					{props.children}
 				</div>
-			</main>
-			<div className="bottom">
-				<p>
-					For more information<br></br>Contact Jenny at 314-705-4425
-				</p>
+				<div className="bottom">
+					<p>
+						For more information<br></br>Contact Jenny at 314-705-4425
+					</p>
 				<Circle />
 			</div>
+			</main>
 		</div>
 	);
 }
