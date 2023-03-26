@@ -9,17 +9,17 @@ const IndexPage = () => {
   return (
 		<React.Fragment>
 			<Layout>
-				<div className="main-content">
+				{/* <div className="main-content"> */}
 					<StaticImage
 						className="sand-image"
 						alt="Children playing in sand"
 						layout="fixed"
 						width={400}
 						height={400}
-						src="../images/sand.jpeg"
+						src="../images/sand_playing.jpeg"
 					/>
 					<AboutUs />
-				</div>
+				{/* </div> */}
 			</Layout>
 			<Footer />
 		</React.Fragment>

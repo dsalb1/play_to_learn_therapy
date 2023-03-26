@@ -13,34 +13,12 @@ body {
 
 .container, footer {
 	background-color: #F2F4F4;
+	position: relative;
 	padding: 0 20px;
 	margin: auto;
 	overflow: hidden;
 	max-width: 768px;
 	font-family: sans-serif;
-}
-
-nav ul {
-	width: 100vw;
-	background-color: purple;
-	margin: 0 -20px;
-	padding: 10px;
-	display: flex;
-
-	li {
-		list-style: none;
-		margin-right: 10px;
-	}
-
-	a {
-		color: white;
-		text-decoration: none;
-		cursor: pointer;
-	}
-
-	a:hover {
-		color: blue;
-	}
 }
 
 .circle {
@@ -85,6 +63,9 @@ nav ul {
 
 	.about {
 		line-height: 22px;
+		&.primary {
+			width: 75%;
+		}
 		p {
 			margin-left: 10px;
 			margin-bottom: 10px;
@@ -93,7 +74,7 @@ nav ul {
 		ul {
 			margin-top: 0;
 		}
-		sup {
+		span {
 			font-size: 10px;
 		}
 	}
