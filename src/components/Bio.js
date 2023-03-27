@@ -1,11 +1,9 @@
 import React from "react";
 
-import bridget_image from "../images/bridget_professional.png";
-
 const Bio = (props) => {
 	return (
 		<div className="bio">
-			<img src={bridget_image} alt={props.alt} />
+			<img width="150" height="150" src={props.image} alt={props.alt} />
 			<p>
 				{props.children}
 			</p>

@@ -15,7 +15,7 @@ const Layout = (props) => {
 
 	return (
 		<div id={props.id} className="container">
-			<Burger open={open} onClickHandler={toggleBurgerHandler}/>
+			<Burger open={open} onClickHandler={toggleBurgerHandler} />
 			{open && <MainNav />}
 			<main>
 				<Circle>
@@ -25,13 +25,13 @@ const Layout = (props) => {
 				{props.pageTitle !== undefined && <h1>{props.pageTitle}</h1>}
 				<div className="main-content">
 					{props.children}
-				</div>
+					</div>
 				<div className="bottom">
 					<p>
 						For more information<br></br>Contact Jenny at 314-705-4425
 					</p>
-				<Circle />
-			</div>
+					<Circle />
+				</div>
 			</main>
 		</div>
 	);

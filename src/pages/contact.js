@@ -8,9 +8,6 @@ const ContactPage = () => {
   return (
 		<React.Fragment>
 			<Layout id="contact" pageTitle="Contact Us">
-				<p>
-					For more information<br></br>Contact Jenny at 314-705-4425
-				</p>
 			</Layout>
 			<Footer />
 		</React.Fragment>
