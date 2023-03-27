@@ -14,10 +14,12 @@ const AboutPage = () => {
 				<Bio image={bridget_image} alt="Bridget Salberg professional image">
 					Bridget Salberg is a pediatric speech-language pathologist who is educated and skilled in play-based
 					therapy and a framework of Gestalt Language Processing. She received both her bachelor's (2012) and
-					Master of Arts (2013) in Speech Language Therapy from Truman State University. Bridget places
-					emphasis on creating a therapy that is centered around client interests and she is well versed at
-					delivering evidence-based practice regarding speech sound systems, language development, fluency,
-					and Augmentative/Alternative Communication systems.
+					Master of Arts (2013) in Communication Disorders from Truman State University. She has worked in the
+					schools for 10 years with children of all ages. Bridget places emphasis on creating a therapy that
+					is centered around client interests and she is well versed at delivering evidence-based practice
+					regarding speech sound systems, language development, fluency, and Augmentative/Alternative
+					Communication systems. When she's not working, you can find her relaxing with her husband and her
+					hound dog, reading, listening to podcasts, and cooking.
 				</Bio>
 				<Bio image={jenny_image} alt="Jenny Smegner professional image">
 					Jenny Smegner has her bachelor's in occupational therapy from St. Louis University (2003) and her
