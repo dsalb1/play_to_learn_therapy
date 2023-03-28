@@ -3,6 +3,7 @@ import React from "react";
 import Bio from "../components/Bio";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
+import Seo from "../components/Seo";
 
 import bridget_image from "../images/bridget_professional.png";
 import jenny_image from "../images/jenny_professional.png";
@@ -22,7 +23,7 @@ const AboutPage = () => {
 					hound dog, reading, listening to podcasts, and cooking.
 				</Bio>
 				<Bio image={jenny_image} alt="Jenny Smegner professional image">
-					Jenny Smegner has her Bachelor's in Cccupational Therapy from St. Louis University (2003) and her
+					Jenny Smegner has her Bachelor's in Occupational Therapy from St. Louis University (2003) and her
 					Masters in Health Sciences from the University of Indianapolis (2008). She has worked as an
 					occupational therapist for the Special School District for 19 years. She specializes in working with
 					kids who have autism and developmental delays. Jenny works closely with teachers, parents, physical
@@ -38,6 +39,15 @@ const AboutPage = () => {
 	);
 };
 
-export const Head = () => <title>Play to Learn Therapy - About Us</title>;
+
+export const Head = () => (
+	<Seo>
+		<meta
+			name="description="
+			content="About the women behind Play to Learn Therapy STL"
+		/>
+		<title>Play to Learn Therapy - About Us</title>
+	</Seo>
+);
 
 export default AboutPage;

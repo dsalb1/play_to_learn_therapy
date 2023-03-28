@@ -17,7 +17,8 @@ nav {
 		font-size: 2rem;
 		text-transform: uppercase;
 		text-decoration: none;
-		padding: 2rem 0;
+		width: min-content;
+		padding: 3rem 3px 0;
 		font-weight: bold;
 		letter-spacing: 0.5rem;
 	}
@@ -80,4 +81,13 @@ nav {
 		width: auto;
 		height: 100%
 	}
+}
+
+// #home .index, #about-us .about-link, #contact .contact-link {
+// 	color: blue;
+// }
+
+[aria-current='page'] {
+	cursor: default;
+	border-bottom: 2px solid white;
 }

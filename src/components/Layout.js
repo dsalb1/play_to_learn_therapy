@@ -9,7 +9,6 @@ const Layout = (props) => {
 	const [open, setOpen] = useState(false);
 
 	const toggleBurgerHandler = () => {
-		console.log('Hamburger Open!');
 		setOpen(!open);
 	}
 

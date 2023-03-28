@@ -4,6 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import AboutUs from '../components/AboutUs';
 import Footer from '../components/Footer';
 import Layout from '../components/Layout';
+import Seo from '../components/Seo';
 
 const IndexPage = () => {
   return (
@@ -26,6 +27,15 @@ const IndexPage = () => {
   );
 }
 
-export const Head = () => <title>Play to Learn Therapy - Home</title>
+export const Head = () => (
+	<Seo>
+		<meta
+			name="description="
+			content="Summertime speech and occupational therapy provided by Bridget Salberg and
+				Jenny Smegner"
+		/>
+		<title>Play to Learn Therapy - Home</title>
+	</Seo>
+);
 
 export default IndexPage
